@@ -1,0 +1,438 @@
+
+::-webkit-scrollbar {
+    width: 5px;
+
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(100,0,0,0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 0, 0, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background: #ffffff;
+    color: black;
+}
+nav{
+    position: relative;
+    
+    background: linear-gradient(to right, #c31432, #240b36);
+    margin-top: -8px;
+    width: 100%;
+    height: 70px;
+}
+.nav-item-con{
+    float:right;
+    position: relative;
+    top:50%;
+    margin-top: -10px;
+    margin-right: 10px;
+        
+}
+a.nav-logo{
+    float:left;
+    text-decoration-line: none;
+    padding:5px;
+    margin: 9px;
+    margin-left: 15px;
+    
+}
+
+a.nav-item{
+    text-decoration-line: none;
+    color: rgb(255,255,255,1);
+    font-family: sans-serif;
+    font-size: 20px;
+    padding:8px;
+    margin: 3px;
+    border:none;
+    transition: color 0.5s,border-radius 0.5s;;
+    
+}
+
+a.nav-item:hover{
+    border:0.5px white solid;
+    border-radius: 20px;
+    color: rgb(255,255,255,0.5);
+}
+
+.home{
+    
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    height: 100%;
+    
+}
+.overlay{
+    background:rgb(0,0,0,0.6);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.svg{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -150;
+    margin-left: -250;
+    border-radius: 10px;
+    width: 500px;
+    height: 200px;
+    background: rgb(0,0,0,0.8);
+}
+.product-section{
+    position: relative;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    
+    width: 100%; 
+    height: auto;
+}
+.products-holder{
+    position: absolute;
+    background: rgb(0,0,0,0.8);
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ;
+    
+}
+.products-holder:hover{
+    opacity: 1;
+}
+.heading{
+    position: relative;
+    width: 300;
+    height: 90px;
+    background: rgb(0,0,0,0.5);
+    font-family:sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    text-align: center; 
+    transition: margin-left 0.2s;
+    
+    
+}
+.heading:hover{
+    margin-left: 50px;
+}
+.product{
+    display: inline-block;
+    
+    opacity: 0.95;
+    margin: 30px 20px 20px 20px;;
+    width:200px;
+    height: 300px;
+    padding:2px;
+    transition: 0.3s;
+}
+.product:hover{
+    box-shadow: 0 6px 15px 5px rgba(255, 255, 255, 0.3);  
+    border-radius: 5px;
+    opacity: 1;
+}
+#image{
+    border-top-left-radius: 5px;
+    width: 200px;
+    height: 100px;
+    max-height: 100px;
+    max-width: 200px;
+    background: rgb(255,255,255,0.8);
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+#Name{
+    background: rgb(0,0,0,0.5);
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding: 5px 0 10px 0;
+}
+#price{
+    background: rgb(0,0,0,0.5);
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 27px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    padding-top: 10px; 
+}
+#cartbtnholder{
+    height: 75px;
+    background: rgb(0,100,0,1);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.cartbtn{
+    border: none;
+    width:100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700; 
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+    cursor: pointer;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.cartlist{
+    background: rgb(0,0,0,1);
+    opacity: 0.8;
+    border:none;
+    position: relative;
+    width: 75%;
+    height:500px;
+    margin-top: 20px;
+    left:50%;
+    margin-left: -575px;
+    transition: opacity 0.5s;
+    padding: 3px;
+}
+.cartlist:hover{
+    opacity: 0.8;
+}
+
+
+.cartbtn:focus{
+        opacity: 0.5;
+}
+
+
+
+
+
+
+
+/* page structure */
+#w {
+  display: block;
+  width: 600px;
+    
+  margin: 0 auto;
+    
+}
+
+
+#page {
+  display: block;
+  background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 15px 0;
+    height: auto;
+    max-height: 350;
+    overflow-y: scroll;
+    box-shadow: 0 6px 15px 5px rgba(0, 0, 0, 0.6);
+}
+
+.tbody{
+    
+}
+/** cart table **/
+#cart {
+  display: block;
+  border-collapse: collapse;
+  margin: 0;
+  width: 100%;
+  font-size: 1.2em;
+  color: #444;
+}
+#cart thead th {
+  padding: 8px 0;
+  font-weight: bold;
+}
+
+#cart thead th.first {
+  width: 175px;
+}
+#cart thead th.second {
+  width: 45px;
+}
+#cart thead th.third {
+  width: 230px;
+}
+#cart thead th.fourth {
+  width: 130px;
+}
+#cart thead th.fifth {
+  width: 20px;
+}
+
+#cart tbody td {
+  text-align: center;
+  margin-top: 4px;
+}
+
+tr.productitm {
+    margin: 10px;
+  height: 65px;
+  line-height: 65px;
+  border-bottom: 1px solid #d7dbe0;
+    transition: opacity 0.5s;
+}
+
+
+
+#cart tbody td img.thumb {
+  vertical-align: bottom;
+  
+    margin-top: 6px;
+  margin-bottom: 6px;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.qtyinput {
+  width: auto;
+  height: 22px;
+  border: 1px solid #616161;
+  background: none;
+  color: #616161;
+  text-align: center;
+}
+
+tr.totalprice, tr.extracosts {
+  height: 35px;
+  line-height: 35px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+tr.extracosts {
+background: #A770EF;  /* fallback for old browsers */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    
+    border-bottom: 2.5px #5e5e5e solid;/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.remove {
+  /* http://findicons.com/icon/261449/trash_can?id=397422 */
+  cursor: pointer;
+  position: relative;
+  right: 12px;
+  top: 5px;
+}
+
+
+.light {
+  color: #00;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+.thick {
+  color: #272727;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+#Product_Name{
+    line-height: normal;
+}
+/** submit btn **/
+tr.checkoutrow {
+  background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    text-align: center;
+  
+}
+td.checkout {
+  padding: 12px 0;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#submitbtn{
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    background-size: 200% auto;
+    border:none;     
+    font-size: 30px;
+    font-family:sans-serif;
+    color: white;
+    transition: 0.3s;
+    cursor:pointer;
+    padding: 10px 10px 10px 10px;
+    margin-left: 100px;
+    box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.6);
+    
+}
+#submitbtn:hover{
+    background-position: right bottom;
+    border-radius: 40px;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#submitbtn:focus{
+    opacity: 0.2;
+    
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+.head{
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 700;
+    top: 50%;
+    margin-top: -10px;
+    
+    
+}
+#user-detail-Name,#user-detail-contact,#user-detail-location{
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border: 1px white solid;
+    border-radius:10px;
+    
+}
+.row{
+    text-align: center;
+    border-bottom: 1px white solid;
+    padding: 5px;
+    
+}
+#user-detail-email{
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border: 1px white solid;
+    border-radius:10px;
+    font-style: oblique;
+}
+#user-detail-address{
+    display: inline-block;
+    font-family: monospace;
+    padding: 10px;
+    margin: 10px;
+    border: 1px white solid;
+    border-radius:10px;
+    max-width: 300px;
+    height: auto;
+}
+
+
